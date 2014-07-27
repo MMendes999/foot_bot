@@ -8,6 +8,8 @@ bot.on('ready', function () {
   //dont start motors untill wee issue a commmand with the keyboard
   var motorsStarted = false;
 
+  this.digitalWrite(13, this.HIGH);
+
   //set the function to initiate motors with keyboard input
   function startMotors () {
     if (!motorsStarted) {
