@@ -20,7 +20,7 @@ bot.on('ready', function () {
   }
 
   //show our command on the command line
-  this.reply.inject({left: left, right: rigth});
+  //this.repl.inject({left: left, right: rigth});
 
   // make `process.stdin` begin emitting "keypress" events
   keypress(process.stdin);
